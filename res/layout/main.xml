@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<com.google.android.maps.MapView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/mapview"
+	    android:layout_width="fill_parent"
+	    android:clickable="true"
+	    android:apiKey="0NETlt3OVtFJprJRnolzilVfsj84pAzmhhMQKVg"
+		android:layout_height="300dp"/>
+	<Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mapview"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:text="Preview Tweet!!!" />
+    <Spinner 
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/tweet_prompt"
+        android:layout_toLeftOf="@id/ok"
+        android:layout_alignTop="@id/ok"
+    />
+    <EditText 
+    	android:layout_height="wrap_content" 
+    	android:layout_below="@+id/spinner" 
+    	android:id="@+id/editText" 
+    	android:layout_width="fill_parent" 
+    	android:visibility="visible" />
+    <Button 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/login" 
+    	android:text="Login to Twitter" 
+    	android:layout_below="@+id/editText" 
+    	android:layout_alignParentLeft="true"
+    	android:visibility="visible" 
+    	/>
+    <Button 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/tweet" 
+    	android:text="Tweet !!!" 
+    	android:layout_toRightOf="@+id/login" 
+    	android:layout_below="@+id/editText"
+    	android:visibility="visible" 
+    	/>
+    <Button
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/refresh"
+    	android:layout_toRightOf="@+id/tweet"
+    	android:layout_below="@+id/editText"
+    	android:text="Refresh"
+    	/>
+<!--    <TextView -->
+<!--    	android:text="0" -->
+<!--    	android:layout_width="wrap_content" -->
+<!--    	android:id="@+id/textViewCount" -->
+<!--    	android:layout_height="wrap_content" -->
+<!--    	android:layout_alignBottom="@+id/editText" -->
+<!--    	android:layout_toRightOf="@+id/login"-->
+<!--    	/>    	-->
+</RelativeLayout>

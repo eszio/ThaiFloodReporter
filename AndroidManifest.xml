@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.esz.thaifloodreporter"
+      android:versionCode="2" android:versionName="1.1">
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+    	<uses-library android:name="com.google.android.maps" />	
+        <activity android:name=".ThaiFloodReporterActivity"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<data android:scheme="thaiflood" android:host="tweet"/>			
+			</intent-filter>
+        </activity>
+
+    </application>
+</manifest>

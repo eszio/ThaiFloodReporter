@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ThaiFloodReporterActivity!</string>
+    <string name="app_name">Thai Flood Reporter</string>
+    <string name="tweet_prompt">ระดับน้ำ</string>
+    <string-array name="tweet_select">
+		<item>น้ำยังไม่ท่วม</item>
+		<item>น้ำเริ่มท่วม</item>
+		<item>น้ำท่วม และเริ่มสูงขึ้นเรื่อยๆ</item>
+		<item>แนวกั้นน้ำพัง</item>
+		<item>น้ำล้นแนวกั้น</item>
+		<item>น้ำท่วมซอย</item>
+		<item>น้ำท่วมถนนใหญ่</item>
+		<item>น้ำท่วมถนนบางส่วน</item>
+		<item>น้ำท่วม-ปิดถนน</item>
+		<item>น้ำท่วม-ห้ามรถเล็ก</item>
+		<item>น้ำท่วมเกาะกลางถนน</item>
+		<item>น้ำท่วมทางเท้า</item>
+		<item>น้ำท่วมครึ่งแข้ง</item>
+		<item>ท่วมถึงเข่า</item>
+		<item>น้ำท่วมถึงเอว</item>
+		<item>น้ำท่วมถึงอก</item>
+		<item>น้ำท่วมหนึ่งเมตร</item>
+		<item>น้ำท่วมเมตรกว่า</item>
+		<item>น้ำท่วมสองเมตร</item>
+		<item>น้ำแรงมาก</item>
+		<item>น้ำท่วม แต่เริ่มลดแล้ว</item>
+		<item>น้ำท่วม แต่ลดลงมากแล้ว</item>
+		<item>น้ำลด เข้าสู่ภาวะปกติ</item>
+		<item>น้ำแห้งแล้ว</item>
+    </string-array>
+</resources>
